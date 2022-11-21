@@ -11,7 +11,9 @@ export default function App() {
         <footer>
           <div>
             This project was coded by Anastasiia Kmit and is{" "}
-            <a href="/">open-sourced on Github</a>
+            <a href="https://github.com/AnastasiiaKmit/weather-react-app-project.git">
+              open-sourced on Github
+            </a>
           </div>
         </footer>
       </div>
