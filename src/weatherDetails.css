@@ -1,0 +1,45 @@
+h1 {
+  font-size: 54px;
+  text-align: start;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+li {
+  text-align: start;
+  font-size: 24px;
+  color: #acadb0;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 27px;
+  }
+  strong {
+    font-size: 32px;
+  }
+  .units {
+    top: -20px;
+    font-size: 10px;
+  }
+  li {
+    font-size: 12px;
+  }
+}
