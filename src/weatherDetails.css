@@ -3,10 +3,11 @@ h1 {
   text-align: start;
   margin-top: 10px;
   margin-left: 10px;
+  color: #32363a;
 }
 
 strong {
-  color: rgb(33, 33, 33);
+  color: #32363a;
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
@@ -15,7 +16,7 @@ strong {
 li {
   text-align: start;
   font-size: 24px;
-  color: #acadb0;
+  color: #97979a;
 }
 
 .inline {
@@ -30,16 +31,16 @@ li {
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 27px;
+    font-size: 44px;
   }
   strong {
-    font-size: 32px;
+    font-size: 44px;
   }
   .units {
     top: -20px;
-    font-size: 10px;
+    font-size: 14px;
   }
   li {
-    font-size: 12px;
+    font-size: 20px;
   }
 }

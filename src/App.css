@@ -4,26 +4,30 @@
   box-sizing: border-box;
 }
 
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+}
+
 .container {
-  margin: 40px 120px;
+  margin: 40px auto;
+  margin-bottom: 5px;
   width: 600px;
   border: 1px solid #a8adb2;
   border-radius: 4px;
   padding: 12px;
 }
 
-.App {
-  font-family: sans-serif;
-  text-align: center;
-}
-
 footer {
   font-size: 12px;
+  margin-top: 5px;
 }
 
 @media (max-width: 900px) {
   .container {
-    margin: 10px 30px;
-    width: 400px;
+    margin: 30px auto;
+    margin-bottom: 5px;
+    max-width: 500px;
   }
 }

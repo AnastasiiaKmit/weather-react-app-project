@@ -8,15 +8,15 @@ export default function App() {
     <div className="App">
       <div className="container">
         <Weather defaultCity="Lviv" />
-        <footer>
-          <div>
-            This project was coded by Anastasiia Kmit and is{" "}
-            <a href="https://github.com/AnastasiiaKmit/weather-react-app-project.git">
-              open-sourced on Github
-            </a>
-          </div>
-        </footer>
       </div>
+      <footer>
+        <div>
+          This project was coded by Anastasiia Kmit and is{" "}
+          <a href="https://github.com/AnastasiiaKmit/weather-react-app-project.git">
+            open-sourced on Github
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
