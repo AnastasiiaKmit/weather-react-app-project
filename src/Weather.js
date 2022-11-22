@@ -48,6 +48,7 @@ export default function Weather(props) {
                 autoComplete="off"
                 placeholder="Type a city..."
                 onChange={updateCity}
+                autoFocus="on"
               />
             </div>
             <div className="col-3">

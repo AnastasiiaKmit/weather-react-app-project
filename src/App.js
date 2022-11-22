@@ -13,7 +13,7 @@ export default function App() {
         <div>
           This project was coded by Anastasiia Kmit and is{" "}
           <a href="https://github.com/AnastasiiaKmit/weather-react-app-project.git">
-            open-sourced on Github
+            open-sourced on GitHub
           </a>
         </div>
       </footer>
