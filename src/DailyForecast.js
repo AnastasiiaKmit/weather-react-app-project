@@ -3,7 +3,6 @@ import DailyForecastDay from "./DailyForecastDay";
 import axios from "axios";
 
 import "./DailyForecast.css";
-import { cleanup } from "@testing-library/react";
 
 export default function DailyForecast(props) {
   let [loaded, setLoaded] = useState(false);
@@ -28,6 +27,8 @@ export default function DailyForecast(props) {
                   <DailyForecastDay data={dailyForecast} />
                 </div>
               );
+            } else {
+              return null;
             }
           })}
         </div>
@@ -40,5 +41,7 @@ export default function DailyForecast(props) {
     let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${lon}&lat=${lat}&key=${apiKey}&units=metric`;
 
     axios.get(apiUrl).then(handleResponse);
+
+    return null;
   }
 }
