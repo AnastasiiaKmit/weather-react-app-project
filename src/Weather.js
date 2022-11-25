@@ -21,22 +21,13 @@ export default function Weather(props) {
       description: response.data.condition.description,
       icon: response.data.condition.icon,
       city: response.data.city,
-
-      /*date: new Date(response.data.dt * 1000),
-      temperature: Math.round(response.data.main.temp),
-      wind: Math.round(response.data.wind.speed),
-      humidity: response.data.main.humidity,
-      description: response.data.weather[0].description,
-      icon: response.data.weather[0].icon,
-      city: response.data.name,*/
     });
   }
 
   function search() {
     let apiKey = "d0od434febbbf4261et13ad2f4f168da";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
-    //let apiKey = "0fd0719178975f973227695c5ae18796";
-    //let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+
     axios.get(apiUrl).then(showLoaded);
   }
 

@@ -18,14 +18,14 @@ export default function WeatherDetails(props) {
       <div className="row">
         <div className="col-6 ">
           <div className="row">
-            <div className="col-6">
+            <div className="col-6 icon-value">
               <WeatherIcon
                 code={props.data.icon}
                 size={65}
                 alt={props.data.description}
               />
             </div>
-            <div className="col-6">
+            <div className="col-6 temperature-value">
               <ConvertedUnits celsius={props.data.temperature} />
             </div>
           </div>

@@ -1,7 +1,8 @@
-.dailyForecast-temperature-min {
-  color: #97979a;
+.dailyForecast-temperature-max {
+  color: #32363a;
 }
 
-.dailyForecastDay {
+.dailyForecastDay,
+.dailyForecast-temperature-min {
   color: #97979a;
 }
