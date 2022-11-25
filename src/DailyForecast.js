@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import WeatherIcon from "./WeatherIcon";
+import DailyForecastDay from "./DailyForecastDay";
 import axios from "axios";
+
 import "./DailyForecast.css";
 
 export default function DailyForecast(props) {
@@ -11,24 +12,16 @@ export default function DailyForecast(props) {
     setLoaded(true);
   }
   if (loaded) {
-    console.log(forecast);
     return (
       <div className="dailyForecast">
         <div className="row">
-          <div className="col">
-            <h3>Thu</h3>
-            <div>
-              <WeatherIcon code="01d" size={32} />
-            </div>
-            <div>
-              <span className="dailyForecast-temperature-max">
-                {forecast[0].temperature.maximum}{" "}
-              </span>{" "}
-              <span className="dailyForecast-temperature-min">
-                {forecast[0].temperature.minimum}
-              </span>
-            </div>
-          </div>
+          {forecast.map(function (dailyForecast, index) {
+            return (
+              <div className="col" key={index}>
+                <DailyForecastDay data={dailyForecast} />
+              </div>
+            );
+          })}
         </div>
       </div>
     );
